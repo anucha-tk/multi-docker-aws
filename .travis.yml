@@ -1,3 +1,4 @@
+language: g
 sudo: required
 services:
   - docker
