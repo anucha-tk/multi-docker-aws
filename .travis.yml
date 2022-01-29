@@ -10,7 +10,7 @@ script:
   - docker run -e CI=true anuchatk/multi-docker-aws npm run test
 
 after_success:
-  - docker build -t anuchatk/multi-client- ./client
+  - docker build -t anuchatk/multi-client ./client
   - docker build -t anuchatk/multi-nginx ./nginx
   - docker build -t anuchatk/multi-server ./server
   - docker build -t anuchatk/multi-worker ./worker
