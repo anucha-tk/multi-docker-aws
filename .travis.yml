@@ -16,7 +16,7 @@ after_success:
   - docker build -t anuchatk/multi-worker ./worker
   # Login ot the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  # take those image and push them to docker hub
+  # take those images and push them to docker hub
   - docker push anuchatk/multi-client
   - docker push anuchatk/multi-nginx
   - docker push anuchatk/multi-server
